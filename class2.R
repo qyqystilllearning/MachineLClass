@@ -11,7 +11,7 @@ df[1,]
 df[1:2]
 df[1:2,]
 
-df[c('gender','names')]
+df['gender']
 
 df$gender
 
