@@ -37,7 +37,7 @@ summary(student_data)
 # Visual Detection
 boxplot(student_data$final_exam_mark, main = "Boxplot of Final Exam Marks")
 
-# Adapted from your quartile calculations
+# Calculate the quartile
 first_q <- quantile(student_data$final_exam_mark, 0.25)
 third_q <- quantile(student_data$final_exam_mark, 0.75)
 iqr_val <- IQR(student_data$final_exam_mark)
