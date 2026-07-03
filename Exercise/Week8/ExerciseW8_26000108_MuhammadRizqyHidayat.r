@@ -32,8 +32,7 @@ View(mydata4)
 glimpse(mydata4)
 
 # Descriptive Statistics
-
-
+# Iris dataset
 data <- iris
                                               
 head(iris,10)
