@@ -1,4 +1,5 @@
 # Week 8 Data Science Class
+# Muhammad Rizqy Hidayat 26000108
 
 library(dplyr)
 
@@ -6,6 +7,7 @@ library(readr)
 
 student_data<- read.csv("C:\\Project\\student_data.csv")
 
+# Show student fail data with final_exam_mark < 40
 Student_fail<- Student_fail<- student_data[student_data$final_exam_mark< 40,] 
 
 View(Student_fail)
