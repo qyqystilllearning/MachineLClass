@@ -20,7 +20,7 @@ View(mydata1)
 
 mydata1<-student_data %>% filter(final_exam_mark> 40) %>% arrange(desc(final_exam_mark))
 View(mydata1)
-
+# Select the student_id, coursework_mark, and final_exam_mark columns from the dataset.
 mydata2 <- student_data%>% select(student_id,coursework_mark, final_exam_mark)
 View(mydata2)
 
