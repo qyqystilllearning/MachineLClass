@@ -34,14 +34,6 @@ summary(student_data)
 
 # 6. How can you identify and detect outliers in the given dataset? Explain and demonstrate using R.
 
-<<<<<<< HEAD
-# Calculate the Quartiles and IQR
-=======
-# Visual Detection
-boxplot(student_data$final_exam_mark, main = "Boxplot of Final Exam Marks")
-
-# Calculate the quartile
->>>>>>> 9eaeea85073b87b2cdc2703c845d4323f7383eb1
 first_q <- quantile(student_data$final_exam_mark, 0.25)
 third_q <- quantile(student_data$final_exam_mark, 0.75)
 iqr_val <- IQR(student_data$final_exam_mark)
