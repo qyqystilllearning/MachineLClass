@@ -14,6 +14,7 @@ View(Student_fail)
 
 Student_fail<- student_data %>% filter(final_exam_mark< 40)
 
+# Arrange the dataset in ascending order based on course_work_mark.
 mydata1<- student_data %>% filter(final_exam_mark > 40) %>% arrange(desc(final_exam_mark))
 View(mydata1)
 
