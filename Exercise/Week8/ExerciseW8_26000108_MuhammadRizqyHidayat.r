@@ -86,6 +86,8 @@ sum(is.na(data$Sepal.Length))
 
 sum(data$Sepal.Length<0)
 
+# Histogram of Sepal Length
+
 hist(iris$Sepal.Length,main = "Histogram of Sepal Length",
      xlab = "Sepal Length (cm)",
      ylab = "Frequency",
