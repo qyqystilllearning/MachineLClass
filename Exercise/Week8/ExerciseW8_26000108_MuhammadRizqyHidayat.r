@@ -64,6 +64,7 @@ summary(data)
 
 summary(data$Sepal.Length)
 
+# Quantile of Sepal.Length
 A<-c(170.2, 181.5, 188.9, 163.9, 166.4, 163.7, 160.4, 175.8, 181.5)
 
 quantile(A)
