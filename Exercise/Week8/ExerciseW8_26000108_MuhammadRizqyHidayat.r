@@ -102,7 +102,8 @@ boxplot(Sepal.Length ~ Species,
         ylab = "Sepal Length (cm)",
         col = c("lightgreen", "lightpink",
                 "lightyellow"))
-     
+
+#Scatter plot of Sepal Length vs Petal Length
 plot(iris$Sepal.Length, iris$Petal.Length,
      main = "Sepal Length vs Petal Length",
      xlab = "Sepal Length (cm)",
