@@ -26,6 +26,7 @@ View(mydata2)
 
 glimpse(student_data)
 
+# mutate the dataset by adding a new column called Total_Mark, which is the sum of coursework_mark and final_exam_mark.
 mydata4 = student_data%>% mutate(Total_Mark=(coursework_mark + final_exam_mark/200*100))
 View(mydata4)
 glimpse(mydata4)
