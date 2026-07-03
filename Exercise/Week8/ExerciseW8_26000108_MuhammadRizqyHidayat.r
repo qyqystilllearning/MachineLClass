@@ -134,10 +134,25 @@ le<-first_q - 1.5 * iqr #this produces 17.375
 ue<-third_q + 1.5 * iqr #this produces 40.375
 
 # Handling outlier
+
+# 1. Drop the values
 data_new<-data
 data_new <- data_new[!data_new<le]
 data_new <- data_new[!data_new>ue]
 data_new
 
-boxplot(data_new, main = "Handling Outlier Boxplot")
+# 2. Replace the values with mean
+data_new <- data
+avg <- round(mean(data_new)) #for the purpose of example we round up value
+data_new[data_new<le] <- avg
+data_new[data_new>ue] <- avg
+data_new
 
+# 3. Replace the values with lower extreme and upper extreme
+data_new <- data
+data_new[data_new<le] <- le
+data_new[data_new>ue] <- ue
+data_new
+
+# Boxplot of the new data after handling outliers
+boxplot(data_new, main = "Handling Outlier Boxplot")
