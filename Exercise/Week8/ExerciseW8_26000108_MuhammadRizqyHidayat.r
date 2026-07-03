@@ -94,7 +94,7 @@ hist(iris$Sepal.Length,main = "Histogram of Sepal Length",
      col = "lightblue",
      border = "black"
      )
-
+# Boxplot of Sepal Length by Species
 boxplot(Sepal.Length ~ Species,
         data = iris,
         main = "Sepal Length by Species",
