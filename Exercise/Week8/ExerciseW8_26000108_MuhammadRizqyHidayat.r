@@ -41,6 +41,7 @@ tail(iris)
 
 str(data)
 
+# Min and Max of Sepal.Length
 min(data$Sepal.Length) #this produces 4.3
 max(data$Sepal.Length) #this produces 7.9
 
